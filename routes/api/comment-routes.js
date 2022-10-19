@@ -1,13 +1,12 @@
 const router = require('express').Router();
 const {
-  getAllcomment,
-  getcommenttById,  
-  createcomment,
-  updatecommentById,
-  deletecommentById,
+  getAllComment,
+  getCommentById,  
+  createComment,
+  updateCommentById,
+  deleteCommentById,
   createReaction,
   deleteReaction,
-  getAllComment
 } = require('../../controllers/comment-controller');
 
 // /apicomment
