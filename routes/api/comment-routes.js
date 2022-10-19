@@ -15,7 +15,7 @@ router
 .get(getAllComment)
 .post(createComment);
 
-//api/thoughts/:commentId
+//comment
 router
 .route('/:commentId')
 .get(getCommentById)

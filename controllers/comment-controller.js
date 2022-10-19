@@ -58,7 +58,7 @@ createComment({ params, body }, res) {
   },
 
 
-//update thought by Id
+//update comment by Id
 updateCommentById({ params, body }, res) {
     Comment.findOneAndUpdate(
       { _id: params.commentId },
@@ -101,7 +101,7 @@ deleteCommentById({ params }, res) {
   
 //create reaction stored in a single comment array field
 createReaction(req, res) {
-  Thought.findOneAndUpdate(
+  Comment.findOneAndUpdate(
     {_id: req.params.commentId},
     {$push: {reactions: req.body}},
     {new: true, runValidators: true}

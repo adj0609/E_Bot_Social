@@ -22,7 +22,7 @@ const userController = {
             select: '-__v'
          }) 
         .populate({
-            path: 'thoughts',
+            path: 'comment',
             select: '-__v'
           })
           .then(dbUserData => {

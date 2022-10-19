@@ -39,7 +39,7 @@ const ReactionSchema = new Schema(
         required: true,
         trim: true
       },
-      thoughtText: {
+      commentText: {
         type: String,
         required: true,
         trim: true,
